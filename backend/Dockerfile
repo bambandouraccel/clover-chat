@@ -1,15 +1,16 @@
 FROM node:18
 
-COPY package*.json .
+WORKDIR /app
 
-RUN npm i
+# Copier uniquement les fichiers nécessaires pour l'installation des dépendances
+COPY package*.json ./
 
+RUN npm install --production
+
+# Copier le reste des fichiers
 COPY . .
 
-#ENV PORT=8080
-ENV PORT=4000
-
-CMD ["npm", "start"]
-
-#EXPOSE 8080
+# Exposer le port utilisé par l'application
 EXPOSE 4000
+
+CMD ["node", "index.js"]
