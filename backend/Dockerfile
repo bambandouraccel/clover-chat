@@ -2,18 +2,12 @@ FROM node:18
 
 WORKDIR /app
 
+# Copier uniquement les fichiers nécessaires pour l'installation des dépendances
 COPY package*.json ./
 
 RUN npm install --production
-
-# Copier le reste des fichiers sources
 COPY . .
-
-# Définir la variable d'environnement pour le port
-ENV PORT=4000
-
-# Exposer le port utilisé par l'application (facultatif pour OpenShift mais utile pour la documentation)
 EXPOSE 4000
 
-# Commande par défaut pour démarrer l'application
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
+
