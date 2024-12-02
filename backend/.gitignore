@@ -1,7 +1,9 @@
 .deploy
 .idea
 .git
+.data
 deploy
+.backend/data
 node_modules
 backend/data
 backend/node_modules
