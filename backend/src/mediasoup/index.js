@@ -1,5 +1,5 @@
 const mediasoup = require('mediasoup');
-config = require('../../config');
+const config = require('../../config');
 const store = require('../store');
 const User = require('../models/User');
 const Meeting = require('../models/Meeting');
