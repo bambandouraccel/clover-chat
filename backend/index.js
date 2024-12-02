@@ -5,8 +5,7 @@ console.log(`Welcome to ${'Clover'.cyan}`);
 
 const express = require('express');
 const app = express();
-//const http = require('http');
-const https = require('https://ooc-backend-clover-chat.apps.origins.heritage.africa');
+const http = require('http');
 const io = require('socket.io');
 const store = require('./src/store');
 const init = require('./src/init');
@@ -24,6 +23,7 @@ app.use('/admin', express.static(`${__dirname}/../frontend/dist`));
 app.use('/room/*', express.static(`${__dirname}/../frontend/dist`));
 app.use('/meeting/*', express.static(`${__dirname}/../frontend/dist`));
 
+//const server = http.createServer(app);
 const server = http.createServer(app);
 store.app = app;
 store.config = Config;

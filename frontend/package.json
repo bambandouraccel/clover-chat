@@ -31,6 +31,7 @@
     "@emoji-mart/data": "1.1.2",
     "@vitejs/plugin-react-swc": "3.6.0",
     "axios": "1.6.7",
+    "clover": "file:",
     "emoji-mart": "3.0.1",
     "emoji-regex": "10.3.0",
     "jwt-decode": "3.1.2",
