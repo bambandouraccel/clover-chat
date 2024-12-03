@@ -2,7 +2,7 @@ import './TopBar.sass';
 import { FiArrowLeft, FiMoreHorizontal, FiExternalLink } from 'react-icons/fi';
 
 function TopBar({ back }) {
-  const honeyside = () => window.open('https://www.honeyside.it', '_blank');
+  const honeyside = () => window.open('https://www.heritage.africa', '_blank');
   const codeCanyon = () => window.open(
     'https://codecanyon.net/item/clover-realtime-messaging-audio-video-conferencing-web-app-nodejs-react-webrtc-socketio/25737452',
     '_blank',

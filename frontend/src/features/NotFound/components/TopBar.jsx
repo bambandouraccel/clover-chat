@@ -3,7 +3,7 @@ import { FiArrowLeft, FiMoreHorizontal, FiExternalLink } from 'react-icons/fi';
 import Config from '../../../config';
 
 function TopBar({ back }) {
-  const honeyside = () => window.open('https://www.honeyside.it', '_blank');
+  const honeyside = () => window.open('https://www.heritage.africa', '_blank');
   const codeCanyon = () => window.open(
     'https://codecanyon.net/item/clover-realtime-messaging-audio-video-conferencing-web-app-nodejs-react-webrtc-socketio/25737452',
     '_blank',
@@ -24,7 +24,7 @@ function TopBar({ back }) {
             </div>
             <div data-uk-dropdown="mode: click; offset: 5; boundary: .top-bar; pos: bottom-right">
               <div className="link" onClick={honeyside}>
-                Honeyside
+                Heritage
                 <div className="icon">
                   <FiExternalLink />
                 </div>
