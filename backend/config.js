@@ -14,7 +14,8 @@ module.exports = {
     authenticationDatabase: process.env.MONGO_AUTHENTICATION_DATABASE,
     hostname: process.env.MONGO_HOSTNAME,
     port: process.env.MONGO_PORT,
-    database: process.env.MONGO_DATABASE_NAME || 'crumble',
+    //database: process.env.MONGO_DATABASE_NAME || 'crumble',
+    database: process.env.MONGO_DATABASE_NAME || 'clover',
   },
   dataFolder: './data',
   rootUser: {
